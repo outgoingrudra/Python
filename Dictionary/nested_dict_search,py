@@ -1,0 +1,12 @@
+data = {"a": {"b": {"c": 42}}}
+
+def search_dict(d, target):
+    for k, v in d.items():
+        if v == target:
+            return True
+        elif isinstance(v, dict):
+            if search_dict(v, target):
+                return True
+    return False
+
+print(search_dict(data, 42))
