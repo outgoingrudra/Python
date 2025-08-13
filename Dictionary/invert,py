@@ -1,0 +1,5 @@
+data = {"a": 1, "b": 2, "c": 1}
+inverted = {}
+for k, v in data.items():
+    inverted.setdefault(v, []).append(k)
+print(inverted)
