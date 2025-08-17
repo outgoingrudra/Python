@@ -1,0 +1,2 @@
+import os
+os.removedirs("folder1/folder2/folder3")
